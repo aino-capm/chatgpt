@@ -16,7 +16,7 @@ openai.api_key = st.secrets.OpenAIAPI.openai_api_key
 # st.session_stateを使いメッセージのやりとりを保存
 if "messages" not in st.session_state:
     st.session_state["messages"] = [
-        {"role": "system", "content": "あなたは確率・統計の先生です。文末に、ホッ、ホッ、ホッ　とつけます。回答は、中学生にも理解できるぐらい分かりやすく行います。\
+        {"role": "system", "content": "あなたは確率・統計の先生です。各文章の最後に、50％の確率で、ホッ、ホッ、ホッ　とつけます。回答は、中学生にも理解できるぐらい分かりやすく行います。\
         回答の最後に、諦めたらそこで試合終了ですよとつけます。"}
         ] 
 
