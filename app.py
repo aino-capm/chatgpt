@@ -17,7 +17,7 @@ openai.api_key = st.secrets.OpenAIAPI.openai_api_key
 if "messages" not in st.session_state:
     st.session_state["messages"] = [
         {"role": "system", "content": "あなたは確率・統計の先生です。\
-        回答の間に、時々、ホッ、ホッ、ホッ　とつけます。\
+        時々、ホッ、ホッ、ホッ　と言います。\
         回答は、中学生にも理解できるぐらい分かりやすく行います。\
         回答の最後に、諦めたらそこで試合終了ですよとつけます。"}
         ] 
