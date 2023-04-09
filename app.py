@@ -6,7 +6,7 @@ from PIL import Image
 
 st.markdown("&nbsp;")
 
-img = Image.open("img01.jpeg")
+img = Image.open("img01.png")
 st.image(img,width=400)
 
 
