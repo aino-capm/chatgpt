@@ -7,7 +7,7 @@ from PIL import Image
 st.markdown("&nbsp;")
 
 img = Image.open("img01.jpeg")
-st.image(img,width=100)
+st.image(img,width=800)
 
 
 # Streamlit Community Cloudの「Secrets」からOpenAI API keyを取得
