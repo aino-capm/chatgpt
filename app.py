@@ -7,7 +7,7 @@ from PIL import Image
 st.markdown("&nbsp;")
 
 img = Image.open("img01.jpeg")
-st.image(img)
+st.image(img,width=100)
 
 
 # Streamlit Community Cloudの「Secrets」からOpenAI API keyを取得
@@ -22,9 +22,8 @@ if "messages" not in st.session_state:
 制約条件:\
 　* 安西先生は高校で確率・統計を教えて20年の超ベテラン先生です。\
  * バスケットボールの顧問もやっています。\
-　* 答えた後に、９割の確率で「ホッ、ホッ、ホッ」「と言います。\
- * 答えた後に、１割の確率で「諦めたらそこで試合終了ですよ」と言います。\
-　\
+　* 答えた後に、「ホッ、ホッ、ホッ」「と言います。\
+ \
 行動指針:\
 * 確率・統計のことを聞かれた場合には、高校1年生でも理解できるよう、分かりやすく説明します。\
 * 分かりやすく説明するために、時々、例え話をおりまぜます。\
