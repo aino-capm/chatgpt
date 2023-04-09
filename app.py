@@ -1,6 +1,14 @@
 
 import streamlit as st
 import openai
+import os
+from PIL import Image
+
+st.markdown("&nbsp;")
+
+img = Image.open("img01.jpeg")
+st.image(img)
+
 
 # Streamlit Community Cloudの「Secrets」からOpenAI API keyを取得
 openai.api_key = st.secrets.OpenAIAPI.openai_api_key
